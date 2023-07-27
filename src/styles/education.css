@@ -1,0 +1,130 @@
+.educations-container {
+  padding: 20px 0px;
+}
+.education-add-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.education-add-btn {
+  background: var(--bg);
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.education-add-btn:hover {
+  opacity: 0.6;
+}
+.education-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+}
+.education-btns {
+  display: flex;
+  justify-content: space-between;
+}
+.education-btns-right-side {
+  display: flex;
+  gap: 10px;
+}
+.education-btns-right-side * {
+  flex-shrink: 0;
+}
+#cancel {
+  width: 90px;
+}
+#save {
+  background: var(--accent);
+  width: 90px;
+}
+#delete {
+  width: 90px;
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+}
+#delete:active {
+  color: var(--red);
+}
+@media screen and (width <1300px) {
+  .education-btns {
+    gap: 10px;
+  }
+  .education-btns-right-side {
+    width: 50%;
+  }
+  #cancel,
+  #save,
+  #delete {
+    width: 45%;
+  }
+}
+/* display On Form */
+.education-display-container {
+  width: 100%;
+  height: fit-content;
+  padding: 0 10%;
+  margin-top: 20px;
+}
+.education-header {
+  height: 40px;
+  background: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--form);
+}
+.education-info {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+.education-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.education-info-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dates {
+  display: flex;
+}
+.education-school {
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid var(--form);
+  padding-left: 5px;
+}
+.education-list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.education-list-item {
+  height: 40px;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+}
+.education-list > div {
+  border-top: 3px solid var(--bg);
+  cursor: pointer;
+}
+.education-list-item-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bx-low-vision {
+  font-size: 1.5rem;
+}

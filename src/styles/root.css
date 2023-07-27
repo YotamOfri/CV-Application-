@@ -1,0 +1,17 @@
+/* vars*/
+/* light mode */
+#light {
+  --bg: rgb(233, 233, 233);
+  --contrast-bg: #f6f8fa;
+  --primary: #303030;
+  --accent: #ff7f50;
+  --red: #ff6666;
+  --form: #1b4594;
+}
+#dark {
+  --bg: #202124;
+  --contrast-bg: #292929;
+  --primary: #f6f8fa;
+  --accent: #00bfff;
+  --red: #ff6666;
+}

@@ -1,0 +1,51 @@
+h1 {
+  color: var(--primary);
+}
+.input {
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  outline: 0px;
+  background: var(--bg);
+  padding-left: 5px;
+  border: 2px solid transparent;
+  transition: 500ms ease-in-out;
+  color: var(--primary);
+}
+.lable {
+  position: absolute;
+  top: 20%;
+  left: 2%;
+  font-size: 0.9rem;
+  transition: 500ms ease-in-out, backgroundcolor 1s ease-in-out,
+    border 1s ease-in-out;
+  color: var(--primary);
+}
+.input:focus {
+  border: 2px solid var(--accent);
+  transition: 0.4s ease-in-out;
+}
+/* when you foucus and when there is text */
+.input:focus + label,
+.input:not(:placeholder-shown) + .lable {
+  font-size: 0.8rem;
+  background: var(--bg);
+  top: -35%;
+  padding: 0 5px;
+  border: 1px solid var(--accent);
+}
+/* when the text is valid */
+.input:valid:not(:placeholder-shown) + .lable {
+  color: var(--accent);
+}
+.input:invalid:not(:placeholder-shown) + .lable {
+  color: #fc2828;
+}
+/* remove the input number buttons */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"] {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
