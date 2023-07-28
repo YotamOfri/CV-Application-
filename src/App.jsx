@@ -4,7 +4,7 @@ import "./styles/root.css";
 import "./styles/inputStyling.css";
 import "./styles/Form.css";
 import "./styles/education.css";
-import { Button } from "./components/button";
+import { Button } from "./components/Button";
 import { Personal_Form } from "./components/PersonalForm";
 import { PersonalFromDisplay } from "./components/PersonalFormDisplay";
 import { EducationForm } from "./components/Education";
